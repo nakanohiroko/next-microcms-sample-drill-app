@@ -1,6 +1,7 @@
 import type {
   MicroCMSContentId,
   MicroCMSDate,
+  MicroCMSImage,
   MicroCMSQueries,
 } from 'microcms-js-sdk';
 import { createClient } from 'microcms-js-sdk';
@@ -17,6 +18,7 @@ export type Questions = {
   title: string;
   contents: questionSet[];
   category?: Category;
+  thumbnail?: MicroCMSImage;
 };
 
 // カスタムフィールド > 問題セットの型定義

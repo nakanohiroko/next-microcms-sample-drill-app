@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { type Article } from '@/libs/microcms';
-import CategoryListItem from '@/app/components/templates/CategoryListItem';
+import CategoryList from '@/app/components/templates/CategoryList';
 
 type Props = {
   data: Article;
@@ -40,7 +40,7 @@ export default function Article({ data }: Props) {
     <main className={`min-h-screen px-6 pt-28 pb-28 lg:px-16 bg-cover bg-center relative ${resultFlg ? 'bg-[url("/bg_result.png")] flex items-center bg-center' : 'bg-[url("/bg_question.png")]'}`}>
       <div className='absolute lg:top-7 lg:right-7 top-5 right-5 text-right'>
         <h1 className='lg:mb-3 mb-2 lg:text-lg text-md text-white'>{data.title}</h1>
-        <CategoryListItem
+        <CategoryList
           category={data.category}
         />
       </div>

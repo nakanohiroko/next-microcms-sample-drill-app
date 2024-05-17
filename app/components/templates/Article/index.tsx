@@ -38,7 +38,7 @@ export default function Article({ data }: Props) {
 
   return (
     <main className={`min-h-screen px-6 pt-28 pb-28 lg:px-16 bg-cover bg-center relative ${resultFlg ? 'bg-[url("/bg_result.png")] flex items-center bg-center' : 'bg-[url("/bg_question.png")]'}`}>
-      <div className='absolute lg:top-7 lg:right-7 top-5 right-5 text-right'>
+      <div className='absolute lg:top-7 lg:right-7 top-5 right-5 text-center'>
         <h1 className='lg:mb-3 mb-2 lg:text-lg text-md text-white'>{data.title}</h1>
         <CategoryList
           category={data.category}
@@ -85,7 +85,7 @@ export default function Article({ data }: Props) {
           </div>
         ))}
           <button 
-            className={`font-bold font-Quicksand bg-[#C3E2FF] text-[#6813DE] text-2xl px-10 py-5 rounded-md mx-auto block ${answeredFlg ? 'hover:lg:opacity-80' : 'invisible'}`}
+            className={`font-bold font-Quicksand bg-[#C3E2FF] text-[#6813DE] text-2xl px-10 py-5 rounded-md mx-auto block ${answeredFlg ? 'hover:lg:opacity-80 transition-all ease-in-out' : 'invisible'}`}
             onClick={nextQuestion}
           >
             Next
@@ -95,7 +95,7 @@ export default function Article({ data }: Props) {
             <h2 className='font-bold font-Quicksand lg:text-6xl text-3xl text-neutral-800 text-center mb-12 w-full'>Your have scored</h2>
             <h3 className='font-bold font-Quicksand lg:text-9xl text-7xl text-white text-center drop-shadow-md mb-12 w-full'>{currentScore} / {questionTotalNum}</h3>
             <Link href="/">
-            <button className='font-Quicksand lg:text-4xl text-2xl text-white text-center w-full rounded-full bg-[#2CBF8B] p-5 hover:text-[#2CBF8B] hover:bg-white'>Wanna try another quiz?</button>
+            <button className='font-Quicksand lg:text-4xl text-2xl text-white text-center w-full rounded-full bg-[#2CBF8B] p-5 hover:text-[#2CBF8B] hover:bg-white transition-all ease-in-out'>Wanna try another quiz?</button>
             </Link>
           </div>
         }

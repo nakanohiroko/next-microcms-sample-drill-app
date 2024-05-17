@@ -12,7 +12,7 @@ export default async function Home() {
         id='questions'
         className='z-10 w-full max-w-5xl items-center justify-between text-sm'
       >
-        <h2 className='mb-10 lg:mb-20 text-3xl font-bold font-Quicksand lg:text-5xl'>Let&apos;s Start the Quiz!</h2>
+        <h2 className='mb-10 lg:mb-20 text-3xl font-bold font-Quicksand lg:text-5xl text-neutral-800'>Let&apos;s Start the Quiz!</h2>
         <ArticleList articles={data.contents} />
       </section>
       {/* End of Questions Section */}

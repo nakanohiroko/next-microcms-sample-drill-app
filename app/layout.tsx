@@ -1,10 +1,7 @@
 import React, { ReactNode, Suspense } from 'react';
 
 import GoogleAnalytics from '@/app/components/elements/GoogleAnalytics/GoogleAnalytics';
-import { Inter } from "next/font/google";
 import "@/app/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'Sample Drill App',
@@ -39,6 +36,10 @@ export default function Layout({ children }: Props) {
         <Suspense>
           <GoogleAnalytics />
         </Suspense>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2214%22>📗</text></svg>"
+        />
       </head>
       <body>
         <main

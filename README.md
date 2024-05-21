@@ -8,8 +8,8 @@
   - https://next-microcms-sample-drill-app.vercel.app/
 
 ## デザイン
-[Quizzler - Free Quiz App Template](:https://www.figma.com/community/file/1370621018564385806) from Figma  
-Author : [@nkthehustler](:https://www.figma.com/@nkthehustler)
+[Quizzler - Free Quiz App Template](https://www.figma.com/community/file/1370621018564385806) from Figma  
+Author : [@nkthehustler](https://www.figma.com/@nkthehustler)
 
 ## microCMSのAPIスキーマ設定
 ### 問題
